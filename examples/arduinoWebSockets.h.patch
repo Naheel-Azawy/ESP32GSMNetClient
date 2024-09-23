@@ -1,0 +1,30 @@
+104a105
+> #define NETWORK_TSIM (99)
+108a110,112
+> #define WEBSOCKETS_NETWORK_TYPE NETWORK_TSIM
+> //#define WEBSOCKETS_NETWORK_TYPE NETWORK_ESP32
+> 
+136c140
+< #include <WiFiClientSecure.h>
+---
+> //#include <WiFiClientSecure.h>
+166c170
+< #define WEBSOCKETS_NETWORK_SSL_CLASS WiFiClientSecure
+---
+> //#define WEBSOCKETS_NETWORK_SSL_CLASS WiFiClientSecure
+190c194
+< #include <WiFiClientSecure.h>
+---
+> //#include <WiFiClientSecure.h>
+193c197,205
+< #define WEBSOCKETS_NETWORK_SSL_CLASS WiFiClientSecure
+---
+> //#define WEBSOCKETS_NETWORK_SSL_CLASS WiFiClientSecure
+> #define WEBSOCKETS_NETWORK_SERVER_CLASS WiFiServer
+> 
+> #elif(WEBSOCKETS_NETWORK_TYPE == NETWORK_TSIM)
+> 
+> #include <NetClient.h>
+> #include <WiFi.h>
+> #define WEBSOCKETS_NETWORK_CLASS NetClient
+> //#define WEBSOCKETS_NETWORK_SSL_CLASS NetClientSecure

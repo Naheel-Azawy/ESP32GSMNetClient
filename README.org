@@ -1,0 +1,8 @@
+* ESP32GSMNetClient
+Network client library to switch between WiFi and GSM in the Arduino framework.
+
+** Notes
+- Built mainly for LILYGO TSIM A7670E, but should work for others.
+- This code is not well tested.
+- TODO: clean
+

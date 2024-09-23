@@ -1,0 +1,26 @@
+{
+    "name": "ESP32GSMNetClient",
+    "version": "0.0.1",
+    "description": "Network client library to switch between WiFi and GSM in the Arduino framework",
+    "keywords": "ESP32, GSM, network",
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/Naheel-Azawy/ESP32GSMNetClient"
+    },
+    "authors":
+    [
+        {
+            "name": "Naheel Azawy",
+            "url": "https://naheel.xyz",
+            "maintainer": true
+        }
+    ],
+    "license": "GPL3",
+    "dependencies": {
+        "vshymanskyy/TinyGSM": "~0.11.5",
+        "govorox/SSLClient": "~1.1.0"
+    },
+    "frameworks": "arduino",
+    "platforms": "espressif32"
+}
